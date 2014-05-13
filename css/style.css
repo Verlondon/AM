@@ -2112,8 +2112,9 @@ h3 {
 		left: 0;
 		width: auto;
 		height: auto;
-		max-width: 80%;
+		max-width: 50%;
 		margin: 15px auto;
+		max-height: 51px;
 	}
 
 	#wrapper #mainMenu #menuWrap {
