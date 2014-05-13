@@ -36,7 +36,7 @@ h1 {
 	height: 40px;
 	font-size: 40px;
 	color: #f9f9f9;
-	background-color: #242e37;
+	background-color: #0D0E0F;
 	padding: 1%;
 }
 
@@ -1092,7 +1092,7 @@ h3 {
 }
 
 #wrapper #content .pages .page .pagePortfolio figure:hover .portfolioHover {
-	box-shadow: inset 10px 10px 350px 47px #00b98d;
+	box-shadow: inset 10px 10px 350px 47px #8477D9;
 	visibility: visible;
 	text-align: center;
 }
@@ -1810,7 +1810,7 @@ h3 {
 	position: relative;
 	top: 1px;
 	left: 99%;
-	border-color: #242e37 transparent transparent #242e37;
+	border-color: #0D0E0F transparent transparent #0D0E0F;
 	border-style: solid;
 	border-width: 29px 23px 47px 38px;
 	width: 0;
