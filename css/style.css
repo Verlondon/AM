@@ -1,0 +1,2706 @@
+/*
+
+	Global Styles
+
+	z-index guide:
+		- img - 1
+		- #mainMenu - 2
+
+*/
+
+html,body {
+	width: 100%;
+	height: 100%;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	background: #f9f9f9;
+}
+
+a {
+	color: #f9f9f9;
+	text-decoration: none;
+}
+
+p {
+	color: #3e4951;
+	font-size: 15px;
+	line-height: 2em;
+}
+
+img {
+	z-index: 1;
+}
+
+h1 {
+	width: 50%;
+	height: 40px;
+	font-size: 40px;
+	color: #f9f9f9;
+	background-color: #242e37;
+	padding: 1%;
+}
+
+h2 {
+	color: #0e3655;
+	font-size: 2.9em;
+	font-weight: 600;
+	margin: 0 0 0 0;
+}
+
+h3 {
+	color: #0e3655;
+	font-size: 1.35em;
+	font-weight: 400;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+}
+/*End Global Styles*/
+
+/* 
+
+	Menu Styles 
+
+*/
+
+#wrapper #mainMenu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	/*left: 0;*/
+	width: 10%;
+	height: 100%;
+	z-index: 10000;
+}
+
+#wrapper #mainMenu #fluidLogo  {
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 15.9%;
+	background-color: #fff;
+	box-shadow: -.5px 0px 5px 0px;
+}
+
+#wrapper #mainMenu #fluidLogo a img {
+	position: absolute;
+	top: 28%;
+	right: 0;
+	left: 0;
+	max-width: 80%;
+	margin: 0 auto;
+	/*height: 37%*/
+}
+
+#wrapper #mainMenu #menuWrap {
+	position: relative;
+	float: left;
+	height: 33.89%;
+	width: 100%;
+	font-weight: 500;
+	text-align: left;
+	background-color: #11171c;
+	box-shadow: -.5px 0px 5px 0px;
+	overflow-y: auto;
+	/*overflow: -moz-scrollbars-vertical;*/
+	/*overflow-x: hidden;*/
+	overflow-x: visible;
+	overflow-y: visible;
+}
+
+#wrapper #mainMenu nav ul li ul {
+	display: none;
+    position: absolute;
+    left: -112%;
+	top: 0%;
+	width: 145px;
+	font-size: .8em;
+	border-radius: 3px;
+	background: #182027;
+}
+
+#wrapper #mainMenu nav ul li ul:hover {
+	display: block;
+}
+
+#wrapper #mainMenu nav ul li ul:after {
+	position: absolute;
+	left: 100%;
+	top: 25%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	pointer-events: none;
+	border-color: rgba(14, 0, 213, 0);
+	border-left-color: #182027;
+	border-width: 7px;
+	margin-top: -20px;
+}
+
+#wrapper #mainMenu nav ul li:hover ul {
+	display: block;
+}
+
+#wrapper #mainMenu #menuWrap #mobileMenuIcon {
+	display: none;
+}
+
+#wrapper #mainMenu #menuWrap #menu li ul li {
+	width: 114px;
+	margin: 0 7px 0 0;
+	padding: 12px;	
+}
+
+#wrapper #mainMenu #menuWrap #menu li ul li a {
+	width: 100%;
+	margin: 0px;
+	padding: 10px 0 10px 10px;
+	background: none;
+}
+
+#wrapper #mainMenu #menuWrap #menu li ul li a:hover {
+	width: 90%;
+	color: #182027;
+	background: #00b98d;
+	border-radius: 2px;
+}
+
+#wrapper #mainMenu #menuWrap .scrollArrow {
+	position: absolute;
+	bottom: 0;
+	/*left: 50%;*/
+	width: 100%;
+	text-align: center;
+	background: #11171c;
+}
+
+#wrapper #mainMenu #menuWrap .scrollArrow img {
+	/*position: absolute;
+	top: 0;
+	left: 0;
+	width: 15%;*/
+}
+
+#wrapper #mainMenu #menuWrap #menu {
+	padding: 3% 0 0 2%;
+}
+
+#wrapper #mainMenu #menuWrap #menu li {
+	width: 89%;
+	margin: 3% 0;
+}
+
+#wrapper #mainMenu #menuWrap #menu a {
+	position: relative;
+	left: 3%;
+	display: inline-block;
+	width: 100%;
+	font-size: .82em;
+	letter-spacing: .1em;
+	padding: 8.5% 6% 9% 30%;
+	color: #f9f9f9;
+	background: url(../images/menu/menu-arrow-right.png) no-repeat;
+	background-position: 8px center;
+	background-size: 12%;
+}
+
+#wrapper #mainMenu #menuWrap #menu a:hover {
+	width: 72%;
+	background: url(../images/menu/menu-arrow-right-hover.png) no-repeat #242e37;
+	background-size: 15%;
+	background-position: 8px center;
+	border-radius: 5px;
+}
+
+#wrapper #mainMenu #menuWrap #menu a div {
+	position: relative;
+	top: 6px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../images/menu/menu-arrow-right.png) no-repeat;
+	background-size: 100%;
+	margin:0 7% 0 0%;
+}
+
+#wrapper #mainMenu #menuWrap #menu a div:hover {
+	background: url(../images/menu/menu-arrow-right-hover.png) no-repeat;
+	z-index: 10000000;
+}
+
+#wrapper #mainMenu #mainSocialIcons {
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 100%;
+	background: url(../images/side_patterns/sidebar-pattern-light.png) repeat-y top;
+	background-size: 100%;
+	box-shadow: -.5px 0px 5px 0px;
+}
+
+#wrapper #mainMenu #mainSocialIcons #socialIcons {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin: 0.3% 0 0 0;
+}
+
+#wrapper #mainMenu #mainSocialIcons #socialIcons li {
+	float: left;
+	width: 32.3%;
+	margin: .5%;
+	/*width: 32.3%;
+	height: 5.4%;
+	float: left;
+	margin: 1.04px 1px 0 0;*/
+}
+
+#wrapper #mainMenu #mainSocialIcons #socialIcons a {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+	padding: 10px 0;
+	background: #292377;
+}
+
+#wrapper #mainMenu #mainSocialIcons #socialIcons a:hover {
+	background: #11171c;
+}
+
+#wrapper #mainMenu #mainSocialIcons #socialIcons a img {
+	width: 55%;
+	/*top: 15%;
+	position: relative;
+	min-height: 20px;*/
+}
+/* End Menu Styles */
+
+/*
+
+	Header Styles
+
+*/
+
+#wrapper #header {
+	position: relative;
+	width: 90%;
+	/*height: 48.7%;*/
+	/*margin: 0 0 0 10%;*/
+}
+
+#wrapper #header img {
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper #header .headerTitle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	display: inline-flex;
+}
+
+#wrapper #header .headerTitle #headerLeft {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+#wrapper #header .headerTitle #headerLeft h1 {
+	position: relative;
+	top: 28.5%;
+	width: 65%;
+	margin: 0 auto;
+	font-size: 2.78em;
+	padding: 0;
+	background: transparent;
+}
+
+#wrapper #header .headerTitle #headerLeft h2 {
+	position: relative;
+	top: 35%;
+	width: 55.7%;
+	padding: 1%;
+	margin: 0 auto;
+	color: #f9f9f9;
+	background: hsla(0, 0%, 0%, 0.3);
+	font-size: 1.3em;
+	font-weight: normal;
+	border-radius: 0;
+}
+
+#wrapper #header .headerTitle #headerLeft .whyFluid {
+	position: relative;
+	top: 42%;
+	left: 21.5%;
+	width: 27.6%;
+}
+
+#wrapper #header .headerTitle #headerLeft .whyFluid a {
+	position: relative;
+	padding: 8% 15.2%;
+	font-size: .9em;
+	letter-spacing: 4px;
+	font-weight: 500;
+	border-radius: 5px;
+	background-color: #00b98d;
+	box-shadow: inset 0px -3px 4px 0px #666;
+}
+
+#wrapper #header .headerTitle #headerLeft .whyFluid a:hover {
+	background-color: #11171c;
+}
+
+#wrapper #header .headerTitle #headerLeft .purchase {
+	position: relative;
+	top: 37%;
+	left: 47.9%;
+	width: 35%;
+}
+
+#wrapper #header .headerTitle #headerLeft .purchase a {
+	position: relative;
+	font-size: .9em;
+	font-weight: 500;
+	letter-spacing: 4px;
+	padding: 5% 6.8%;
+	border: solid #fff 2.5px;
+	border-radius: 5px;
+}
+
+#wrapper #header .headerTitle #headerLeft .purchase a:hover {
+	background: #242e37;
+}
+
+#wrapper #header .headerTitle #headerLaptop {
+	width: 50%;
+	height: 100%;
+}
+
+#wrapper #header .headerTitle #headerLaptop .laptop {
+	position: relative;
+	top: 14%;
+	width: 82%;
+	height: 100%;
+}
+
+#wrapper #header .headerTitle .laptop img {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#wrapper #header .headerTitle #headerLaptop #laptopArrows {
+	position: relative;
+	top: -85%;
+	width: 82%;
+	height: 100%;
+}
+
+#wrapper #header .headerTitle #laptopArrows img {
+	width: 2.2%;
+}
+
+#wrapper #header .headerTitle #laptopArrows .laptopArrowUp {
+	position: relative;
+	top: 9%;
+	left: 46.4%;
+	width: 7.4%;
+	height: 11.5%;
+}
+
+#wrapper #header .headerTitle #laptopArrows .laptopArrowUp img {
+	width: 100%;
+}
+
+#wrapper #header .headerTitle #laptopArrows .laptopArrowDown {
+	position: relative;
+	top: 41%;
+	left: 46.4%;
+	width: 7.4%;
+	height: 11.5%;
+}
+
+#wrapper #header .headerTitle #laptopArrows .laptopArrowDown img {
+	width: 100%;
+}
+
+#wrapper #header .headerTitle #laptopArrows .laptopArrowLeft {
+	position: relative;
+	top: -16.5%;
+	left: 14.6%;
+	width: 6.77%;
+}
+
+#wrapper #header .headerTitle #laptopArrows .laptopArrowLeft img {
+	width: 100%;
+}
+
+#wrapper #header .headerTitle #laptopArrows .laptopArrowRight {
+	position: relative;
+	top: -76.6%;
+	left: 78.6%;
+	width: 6.77%;
+}
+
+#wrapper #header .headerTitle #laptopArrows .laptopArrowRight img {
+	width: 100%;
+}
+
+#wrapper #header .headerTitle #headerLaptop #laptopMountain {
+	position: relative;
+	top: -185.5%;
+	width: 80%;
+	height: 100%;
+}
+
+#wrapper #header .headerTitle #headerLaptop #laptopMountain img {
+	position: relative;
+	top: 7.3%;
+	left: 15%;
+	width: 72.42%;
+	z-index: -1;
+}
+
+#wrapper #header .swipeSlideshow .slideshowInnerContainer {
+	position: relative;
+}
+
+#wrapper #header .swipeSlideshow .slideshowInnerContainer #slides .slidesjs-previous {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	width: 68px;
+	height: 72px;
+	margin-top: -37px;
+	text-indent: 1000000px;
+	background: url(../images/top_slider/left-arrow.png);	
+	z-index: 11;
+}
+
+#wrapper #header .swipeSlideshow .slideshowInnerContainer #slides .slidesjs-previous:hover {
+	background: url(../images/top_slider/left-arrow-hover.png);
+}
+
+#wrapper #header .swipeSlideshow .slideshowInnerContainer #slides .slidesjs-next {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	width: 68px;
+	height: 72px;
+	margin-top: -37px;
+	text-indent: 1000000px;
+	background: url(../images/top_slider/right-arrow.png);
+	z-index: 11;
+}
+
+#wrapper #header .swipeSlideshow .slideshowInnerContainer #slides .slidesjs-next:hover {
+	background: url(../images/top_slider/right-arrow-hover.png);
+}
+/* end header */
+
+/*
+
+	Body Structure and Page Headers
+
+*/
+
+#wrapper #content {
+	width: 90%;
+	background: #f9f9f9;
+	/*margin: 0 0 0 10%;*/
+}
+
+#wrapper #content .pages {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/*margin-top: 0;*/
+}
+
+#wrapper #content .pages .prevPage, #wrapper #content .pages .nextPage {
+	display: none;
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	padding: 20px;
+	font-size: 80px;
+	text-align: center;
+	color: #fff;
+	background: url(../images/bg-transparent-blk.png) repeat;
+	z-index: 100;
+}
+
+#wrapper #content .pages .prevPage {
+	left: 0px;
+}
+
+#wrapper #content .pages .nextPage {
+	right: 0px;
+}
+
+#wrapper #content .pages .prevPage img, #wrapper #content .pages .nextPage img {
+	position: absolute;
+	top: 25px;
+}
+
+#wrapper #content .pages .prevPage img {
+	left: 19%;
+}
+
+#wrapper #content .pages .nextPage img {
+	right: 19%;
+}
+
+#wrapper #content .pages .pagesContainer {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#wrapper #content .pages .page {
+	float: left;
+	width: 87%;
+	margin: 0 auto;
+}
+
+#wrapper #content .pages .page .pageInnerContainer {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#wrapper #content .pages .page .pageHeader {
+	width: 100%;
+	margin-bottom: 6.75%;
+}
+
+#wrapper #content .pages .page .pageTitle {
+	/*display: none;*/
+	float: left;
+	width: 48%;
+	height: 50%;
+}
+
+#wrapper #content .pages .page .pageTitle h1 {
+	height: 75px;
+	width: 100%;
+	padding: 0;
+}
+
+#wrapper #content .pages .page .pageTitle section {
+	display: inline-block;
+}
+
+#wrapper #content .pages .page .pageTitle .titleOne {
+ 	position: relative;
+ 	width: 22%;
+ 	height: 75px;
+ 	margin: 0 -15% 0 0;
+ 	z-index: 1;
+ }
+
+#wrapper #content .pages .page .pageTitle .titleOne img {
+	position: absolute;
+	right: 27%;
+	width: 25%;
+	top: 24%;
+}
+
+
+#wrapper #content .pages .page .pageTitle .titleDesign {
+	position: absolute;
+	top: 0;
+	right: -41.5px;
+	border-color: #292377 transparent transparent #292377;
+	border-style: solid;
+	border-width: 8px 4px 68px 39px;
+	width: 0;
+	height: 0;
+}
+
+#wrapper #content .pages .page .pageTitle .titleTwo {
+	position: relative;
+	width: 41%;
+	height: 75px;
+	z-index: 0;
+}
+
+#wrapper #content .pages .page .pageTitle .titleTwo h1 {
+	position: absolute;
+	left: 12px;
+	height: 75px;
+	background: #292377;
+}
+
+#wrapper #content .pages .page .pageTitle .titleTwo h1 span {
+	display: block;
+	position: relative;
+	top: 24%;
+	right: -22%;
+	text-align: center;
+	font-size: .53em;
+	color: #fff;
+	font-weight: bold;
+	line-height: 2em;
+}
+
+#wrapper #content .pages .page .pageTitle .titleDesignTwo {
+	position: absolute;
+	top: 0;
+	right: -54px;
+	border-color: #292377 transparent transparent #292377;
+	border-style: solid;
+	border-width: 8px 4px 68px 39px;
+	width: 0;
+	height: 0;
+}
+/*End Body Structure and Page Headers*/
+
+/*
+	
+	Home
+
+*/
+
+#wrapper #content .pages .pagesContainer .page #homeBackground {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper #content .pages .page .pageHeader .pageBlurb {
+	position: relative;
+	float: left;
+	margin: 6% 0 0 2%;
+	width: 39%;
+}
+
+#wrapper #content .pages .page .pageHeader .pageBlurb h2 {
+	padding: 0%;
+	margin-left: -3px;
+}
+
+#wrapper #content .pages .page .pageHeader .pageBlurb h3 {
+	margin: 2.5% 0;
+}
+
+#wrapper #content .pages .page .pageHeader .pageBlurb p {
+	
+}
+
+#wrapper #content .pages .page .pageHeader .pad3D {
+	position: absolute;
+	width: 34%;
+	top: 11.3%;
+	left: 12.6%;
+}
+
+#wrapper #content .pages .page .pageHeader .pad3D img {
+	width: 100%;
+}
+
+#wrapper #content .pages .page .pageContent {
+	width: 100%;
+	height: 100%;
+}
+#wrapper #content .pages .page .pageContent img {
+	width: 100%;
+}
+
+#wrapper #content .pages .page .pageSliderContainer {
+	position: relative;
+	width: 67%;
+	height: 270px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-previous {
+	position: absolute;
+	top: 30%;
+	left: 20px;
+	width: 68px;
+	height: 72px;
+	text-indent: 1000000px;
+	background: url(../images/top_slider/left-arrow.png);
+	z-index: 10;
+}
+
+#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-previous:hover {
+	background: url(../images/top_slider/left-arrow-hover.png);
+}
+
+#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-next {
+	position: absolute;
+	top: 30%;
+	right: 20px;
+	width: 68px;
+	height: 72px;
+	text-indent: 1000000px;
+	background: url(../images/top_slider/right-arrow.png);
+	z-index: 10;	
+}
+
+#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-next:hover {
+	background: url(../images/top_slider/right-arrow-hover.png);
+}
+
+#wrapper #content .pages .page .pageSlider {
+	width: 100%;
+	/*height: 300px;*/
+	/*margin: 10% 0;*/
+
+}
+
+#wrapper #content .pages .page .pageSliderImgs {
+	width: 100%;
+}
+
+#wrapper #content .pages .page .pageSliderImgs img {
+	width: 100%;
+	/*height: 300px;*/
+}
+
+#wrapper #content .pages .page .pageSliderImgs div {
+	float: left;
+	margin: 5px 0px 10px 0px;
+}
+
+#wrapper #content .pages .page .pageSliderPrev {
+	position: absolute;
+	left: 0px;
+	top: 45%;
+}
+
+#wrapper #content .pages .page .pageSliderNext {
+	position: absolute;
+	right: 0px;
+	top: 45%;
+}
+
+#wrapper #content .pages .page .pageContent .buyButton {
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	width: 120px;
+	height: 38px;
+	padding: 15px 0 0 25px;
+	margin: 0 0 0 -60px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 5px;
+	box-shadow: inset 0px -3px 4px 0px #666;
+	background: #e74c3c url('../images/articles/read-more-arrow.png') no-repeat;
+	background-position: 20px;
+	z-index: 10;
+}
+
+#wrapper #content .pages .page .pageContent .buyButton:hover {
+	background: #11171c url('../images/articles/read-more-arrow.png') no-repeat;
+	background-position: 20px;
+}
+
+/*#wrapper #content .pages .page .pageContent #buyButton {
+	position: relative;
+	top: -49%;
+	left: 43.5%;
+	width: 18%;
+	height: 19%;
+	background: #e74c3c;
+	border-radius: 5px;
+	box-shadow: inset 0px -3px 4px 0px #666;
+	z-index: 100;
+}
+
+#wrapper #content .pages .page .pageContent #buyButton:hover {
+	background: #11171c;
+}
+
+#wrapper #content .pages .page .pageContent #buyButton a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 8%;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+#wrapper #content .pages .page .pageContent #buyButton img {
+	position: relative;
+	top: 16%;
+	width: 17%;
+	margin: 0% 10% 0% 15%;
+}*/
+
+/* end Home */
+
+/*
+
+	About Us
+
+*/
+#wrapper #content .pages .page #aboutBackground {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../images/about_us/background.png) no-repeat;
+	background-size: cover;
+}
+
+#wrapper #content .pages .page .pageHeader .pageAboutBlurb {
+	position: relative;
+	float: left;
+	margin: 2.5% 0 0 2%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2.5% 0 0 0;
+	text-align: center;
+}
+
+#wrapper #content .pages .page .pageHeader .pageAboutBlurb h2 {
+	padding: 0%;
+}
+
+#wrapper #content .pages .page .pageHeader .pageAboutBlurb h3 {
+	font-size: 1.5em;
+	margin: 1%;
+}
+
+#wrapper #content .pages .page .pageAboutContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper #content .pages .page .pageAboutItemsCage {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: -5% 0 0 0;
+	text-align: center;
+}
+
+#wrapper #content .pages .page .pageAboutItem {
+	width: 23%;
+	height: 500px;
+	background-color: transparent;
+	display: inline-block;
+	margin: 4px 2% 4% 2%;
+	border-radius: 5px;
+	color: #242e37;
+}
+
+#wrapper #content .pages .page .pageAboutItem section {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 65%;
+}
+
+#wrapper #content .pages .page .pageAboutItem .aboutTop img {
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper #content .pages .page .pageAboutItem .aboutTop .hoverGroup {
+	position: relative;
+	top: -100.8%;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+
+#wrapper #content .pages .page .pageAboutItem .aboutTop:hover .hoverGroup {
+	position: relative;
+	top: -100.8%;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 10px 10px 350px 47px #00b98d;
+	border-radius: 5px;
+	visibility: visible;
+}
+
+#wrapper #content .pages .page .pageAboutItem .aboutTop .hoverGroup .aboutSocials {
+	width: 70%;
+	height: 100%;
+	padding: 30% 15%;
+}
+
+#wrapper #content .pages .page .pageAboutItem .aboutTop .hoverGroup .aboutSocials a {
+	display: inline-block;
+	width: 50px;
+	background: #fff;
+	border-radius: 50px;
+}
+
+#wrapper #content .pages .page .pageAboutItem .aboutTop .hoverGroup .aboutSocials a:hover {
+	background: #576a7c;
+	border-radius: 50px;
+}
+
+#wrapper #content .pages .page .pageAboutItem .aboutTop .hoverGroup .aboutSocials img {
+	width: 40%;
+	padding: 15px;
+}
+
+#wrapper #content .pages .page .pageAboutItem h3 {
+	background-color: transparent;
+	font-size: 1.7em;
+	font-weight: bold;
+	padding: 0;
+	margin: 1% 0 2% 0;
+	text-align: left;
+}
+
+#wrapper #content .pages .page .pageAboutItem h4 {
+	margin: 0 0 5% 0;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: left;
+	color: #919191;
+}
+
+#wrapper #content .pages .page .pageAboutItem p {
+	width: 100%;
+	text-align: left;
+}
+/*End About Us*/
+
+/* 
+
+	Portfolio
+
+*/
+#wrapper #content .pages .page #portfolioBackground {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+#wrapper #content .pages .page #portfolioBackground .pageHeader {
+	margin-bottom: 2.75%;
+}
+
+#wrapper #content .pages .page .pageHeader .pagePortfolioBlurb {
+	position: relative;
+	float: left;
+	margin: 2.5% 0 0 2%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2.5% 0 0 0;
+	text-align: center;
+}
+
+#wrapper #content .pages .page .pageHeader .pagePortfolioBlurb h2 {
+	padding: 0%;
+}
+
+#wrapper #content .pages .page .pageHeader .pagePortfolioBlurb h3 {
+	font-size: 1.5em;
+	margin: 1%;
+}
+
+#wrapper #content .pages .page .pageHeader .portfolioNav {
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	margin-top: 2%;	
+}
+
+#wrapper #content .pages .page .pageHeader .portfolioNav ul {
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper #content .pages .page .pageHeader .portfolioNav ul li {
+	width: 6%;
+	height: 100%;
+	display: inline-block;	
+	background: #d4d4d4;
+	border-radius: 5px;
+	box-shadow: inset 0px -3px 4px 0px #666;
+	margin: 0 1px;
+}
+
+#wrapper #content .pages .page .pageHeader .portfolioNav ul li:hover {
+	background: #fd4646;
+}
+
+#wrapper #content .pages .page .pageHeader .portfolioNav ul li a {
+	display: inline-block;
+	line-height: 1.8em;
+	width: 100%;
+	height: 100%;
+	color: #9a9a9a;
+	font-size: 20px;
+}
+
+#wrapper #content .pages .page .pageHeader .portfolioNav ul li a:hover {
+	color: #fff;
+}
+
+#wrapper #content .pages .page .pagePortfolioContainer {
+	width: 76%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#wrapper #content .pages .page .pagePortfolio {
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper #content .pages .page .pagePortfolio figure {
+	position: relative;
+	float: left;
+	margin: 0 .1% .1% 0;
+}
+
+#wrapper #content .pages .page .pagePortfolio img {
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper #content .pages .page .pagePortfolio figure .portfolioHover {
+	position: relative;
+	top: -100.4%;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+
+#wrapper #content .pages .page .pagePortfolio figure:hover .portfolioHover {
+	box-shadow: inset 10px 10px 350px 47px #00b98d;
+	visibility: visible;
+	text-align: center;
+}
+
+#wrapper #content .pages .page .pagePortfolio .portfolioHover p {
+	color: #fff;
+	font-weight: bold;
+	line-height: 1.3em;
+	width: 60%;
+	margin: 17% 0% 0% 20%;
+	font-size: 1.1em;
+}
+#wrapper #content .pages .page .pagePortfolio .portfolioHover span {
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-style: italic;
+	font-size: .9em;
+	margin: 1% 0 0% 0;
+}
+
+#wrapper #content .pages .page .pagePortfolio .portfolioHover span a {
+	margin: 0 auto;
+}
+
+#wrapper #content .pages .page .pagePortfolio .portfolioHover a img {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	margin: 0 0 0 20%;
+	float: left;
+}
+
+#wrapper #content .pages .page .pagePortfolio .portfolioHover a span {
+	display: block;
+	float: left;
+	width: 36%;
+	margin: 6% 0 0 0;
+}
+
+#wrapper #content .pages .page .pagePortfolio .listFileOne {
+	width: 30%;
+	height: 549px;
+}
+
+#wrapper #content .pages .page .pagePortfolio .listFileTwo {
+	width: 29%;
+	height: 225px;	
+}
+
+#wrapper #content .pages .page .pagePortfolio .listFileThree {
+	width: 40%;
+	height: 275px;
+}
+
+#wrapper #content .pages .page .pagePortfolio .listFileFour {
+	width: 29%;
+	height: 323.5px;
+	margin-top: -50px;
+}
+
+#wrapper #content .pages .page .pagePortfolio .listFileFive {
+	width: 40%;
+	height: 274px
+}
+
+#wrapper #content .pages .page .pagePortfolio .listFileSeven {
+	width: 44.1%;
+	height: 250px;
+}
+
+#wrapper #content .pages .page .pagePortfolio .listFileSix {
+	width: 55%;
+	height: 250px;
+}
+
+.pagePortfolio .lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+#wrapper #content .pages .page .pagePortfolio .portfolioHover .lightbox img {
+	/** Pad the lightbox image */
+	float: none;
+	width: 47%;
+	height: 80%;
+	max-width: 90%;
+	max-height: 80%;
+	margin: 5% 0 0 0;
+}
+
+.pagePortfolio .lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+/* End portfolio*/
+
+/* 
+
+	Articles 
+
+*/
+#wrapper #content .pages .page #articlesBackground {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #f7f7f7; 
+	background-size: cover;
+}
+
+#wrapper #content .pages .page #articlesBackground .pageHeader {
+	display: inline-block;
+	height: 100%;
+}
+
+#wrapper #content .pages .page .pageHeader .pageArticleBlurb {
+	float: left;
+	width: 41%;
+	margin: 3% 4% 0 6%;
+}
+
+#wrapper #content .pages .page .pageHeader .pageArticleBlurb h2 {
+	
+}
+
+#wrapper #content .pages .page .pageHeader .pageArticleBlurb h3 {
+	font-size: 1em;
+}
+
+#wrapper #content .pages .page .pageHeader .pageArticleBlurb h3 a {
+	color: #00b98d;
+}
+
+#wrapper #content .pages .page .pageHeader .pageArticleBlurb p {
+	margin: 3% 0;
+}
+#wrapper #content .pages .page .pageHeader .articleFeaturedImage {
+	float: left;
+	width: 44%;
+}
+
+#wrapper #content .pages .page .pageHeader .articleFeaturedImage img {
+	width: 100%;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons {
+	float: left;
+	width: 100%;
+	height: 42px;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons figure {
+	float: left;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	box-shadow: inset 0px -3px 4px 0px #666;
+	margin: 0 1% 0 0;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons a {
+ 	display: inline-block;
+ 	width: 100%;
+ 	height: 100%;
+	font-size: .8em;
+	letter-spacing: 3px;
+	font-weight: 500;
+ }
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons img {
+	position: relative;
+	top: 7px;
+	margin: 0 7.5%;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleCalendar {
+	width: 30%;
+	background: #242e37;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleCalendar:hover {
+	background: #11171c;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleComments {
+	width: 16.3%;
+	background: #576a7c;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleComments:hover {
+	background: #11171c;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore {
+	width: 34%;
+	background: #00b98d;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore:hover {
+	background: #11171c;
+}
+
+/*Articles Light Box*/
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure #articleLightPrev {
+	position: absolute;
+	top: 37%;
+	left: 11%;
+	width: 8%;
+	height: 17.3%;
+	background: url(../images/articles/left-lightbox-arrow.png) no-repeat;
+	background-size: 100%;
+	border: none;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure #articleLightPrev:hover {
+	background: url(../images/articles/left-hover-lightbox-arrow.png) no-repeat;
+	background-size: 100%;
+	border: none;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure #articleLightNext {
+	position: absolute;
+	top: 37%;
+	right: 11%;
+	width: 8%;
+	height: 17.3%;
+	background: url(../images/articles/right-lightbox-arrow.png) no-repeat;
+	background-size: 100%;
+	border: none;
+	
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure #articleLightNext:hover {
+	background: url(../images/articles/right-hover-lightbox-arrow.png) no-repeat;
+	background-size: 100%;
+	border: none;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure {
+	/** Pad the lightbox image */
+	float: none;
+	width: 47%;
+	height: 97%;
+	max-width: 90%;
+	max-height: 97%;
+	background: #f9f9f9;
+	margin: 1% auto;
+	box-shadow: none;
+	overflow-x: hidden;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure header {
+	position: relative;
+	width: 100%;
+	margin: 0 0 3% 0
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure header img {
+	position: relative; 
+	width: 90%;
+	margin: 2% 0 0 0;
+	padding: 0;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure header h1 {
+	width: 95%;
+	height: 9%;
+	color: #242e37;
+	background: transparent;
+	padding: 0;
+	margin: 2% 0 1% 5%;
+	letter-spacing: 1px;
+	font-size: 23px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure header h2 {
+	width: 95%;
+	color: #009a75;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 0;
+	margin: 0 0 1% 5%;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure header h3 {
+	width: 95%;
+	color: #919191;
+	margin: 1% 0 1% 5%;
+	padding: 0;
+	letter-spacing: 0.6px;
+	text-align: left;
+	font-size: 9.5px;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure section {
+	position: relative;
+	width: 90%;
+	text-align: left;
+	margin:0 0 0 5%;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure section p {
+ 	color: #666666;
+	padding: 0 0 1.4% 0;
+	margin: 0;
+	line-height: 1.7em;
+	letter-spacing: 0.1px;
+	font-size: 12px;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure section blockquote {
+	color: #919191;
+	border: #00b98d solid;
+	border-width: 0 0 0 5px;
+	padding: 1% 0% 1% 2%;
+	margin: 0 0 1.4% 0;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure section .tags {
+	color: #00b98d;
+	font-weight: bold;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure section .tags a {
+	display: inline;
+	color: #919191;
+	font-size: .93em;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure footer {
+	width: 100%;
+	text-align: left;
+	margin: 2% 0 0 5%;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure footer h4 {
+	color: #222222;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 0 0 1% 0;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure footer p {
+	color: #666666;
+	padding: .4% 0 1.4% 0;
+	margin: 0;
+	line-height: 1.3em;
+	letter-spacing: 0.1px;
+	font-size: 9px;
+}
+
+#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+/*End Articles Light Box*/
+
+#wrapper #content .pages .page #articlesBreakLine {
+	width: 100%;
+	margin: -5% 0 4% 0;
+	text-align: center;
+}
+
+#wrapper #content .pages .page #articlesBreakLine img {
+	width: 84%;
+	height: 1px;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer {
+	position: relative;
+	width: 80%;
+	height: 150px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticlesInnerContainer {
+	position: relative;
+	width: 95%;
+	height: 150px;
+	margin: 0 auto;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticlesPrevBtn {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 40px;
+	height: 100%;
+	font-size: 70px;
+	background: #f9f9f9 url(../images/articles/slider_left_arrow.png) no-repeat;
+	background-position: center;
+	z-index: 100;
+	text-indent: 1000000px;
+	cursor: pointer;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticlesNextBtn {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 40px;
+	height: 100%;
+	font-size: 70px;
+	background: #f9f9f9 url(../images/articles/slider_right_arrow.png) no-repeat;
+	background-position: center;
+	z-index: 100;
+	text-indent: 1000000px;
+	cursor: pointer;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 160px;
+	margin: 0 auto;
+	padding: 0 0 0 20px;
+	overflow: hidden;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticle {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 150px;
+	height: 100%;
+	margin-right: 10px;
+	text-align: center;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticle img {
+	/*position: relative;
+	top: 6%;
+	width: 90%;*/
+	height: 90%;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticle:hover img {
+	visibility: hidden;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticle .otherArticleHover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 90%;
+	visibility: hidden;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticle:hover .otherArticleHover {
+	background: #00b98d;
+	visibility: visible;
+	/*text-align: center;
+	z-index: 10000;*/
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticle:hover .otherArticleHover a img {
+	width: 70%;
+	height: 34%;
+	margin: 8% 0 3% 0%;
+	visibility: visible;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticle:hover .otherArticleHover h3 {
+	width: 100%;
+	color: #fff;
+	font-size: .9em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticle:hover .otherArticleHover p {
+	color: #006f55;
+
+	font-size: .9em;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticle:hover .otherArticleHover p a {
+	color: #006f55;
+	font-weight: bold;
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticlesPrevBtn a:hover {
+	/*position: absolute;
+	top: 0px;
+	width: 40px;
+	height: 100%;
+	font-size: 70px;
+	text-align: center;
+	color: #fff;
+	background: url(../images/articles/slider_right_arrow.png) no-repeat;
+	opacity: .7;
+	z-index: 100;*/
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticlesNextBtn a:hover {
+	/*position: absolute;
+	top: 0px;
+	width: 40px;
+	height: 100%;
+	font-size: 70px;
+	text-align: center;
+	color: #fff;
+	background: url(../images/articles/slider_right_arrow.png) no-repeat;
+	opacity: .7;
+	z-index: 100;*/
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticlesPrevBtn {
+	
+}
+
+#wrapper #content .pages .page .pageOtherArticlesContainer .pageOtherArticles .pageOtherArticlesNextBtn {
+	/*right: 0px;*/
+}
+/* End Articles*/
+
+/* 
+
+	Key Points
+
+*/
+#wrapper #content .pages .page #keyBackground {
+	position: relative;
+	width: 100%;
+	height:100%;
+	background: url(../images/key_points/background.png) no-repeat;
+	background-size: cover;
+}
+
+#wrapper #content .pages .page .pageHeader .pageKeyBlurb {
+	position: relative;
+	float: left;
+	margin: 2.5% 0 0 2%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2.5% 0 0 0;
+	text-align: center;
+}
+
+#wrapper #content .pages .page .pageHeader .pageKeyBlurb h2 {
+	padding: 0%;
+	color: #fff;
+}
+
+#wrapper #content .pages .page .pageHeader .pageKeyBlurb h3 {
+	color: #242e37;
+	font-size: 1.5em;
+	margin: 1%;
+}
+
+#wrapper #content .pages .page .pageKeyPointsContainer {
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper #content .pages .page .pageKeyPoints {
+	width: 100%;
+	height: 100%;
+	margin: -6.5% 0 0 0;
+	text-align: center;
+}
+
+#wrapper #content .pages .page .pageKeyBox {
+	width: 25%;
+	height: 500px;
+	background-color: #f9f9f9;
+	display: inline-block;
+	margin: 5px 1% 4% 1%;
+	border-radius: 5px;
+	color: #242e37;
+	overflow: auto;
+}
+
+#wrapper #content .pages .page .pageKeyBox section {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 45%
+}
+
+#wrapper #content .pages .page .pageKeyBox .keyBoxTop img{
+	width: 100%;
+	height: 100%;
+}
+#wrapper #content .pages .page .pageKeyBox .keyBoxArrow {
+	position: relative;
+	width: 17%;
+	height: 17%;
+	margin: 0 auto;
+	margin-top: -9%;
+	margin-bottom: -15%;
+}
+
+#wrapper #content .pages .page .pageKeyBox .keyBoxArrow a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: url(../images/key_points/right_arrow.png) no-repeat;
+	background-size: 100%;
+}
+
+#wrapper #content .pages .page .pageKeyBox .keyBoxArrow a:hover {
+	background: url(../images/key_points/right_arrow_hover.png) no-repeat;
+	background-size: 100%;
+}
+
+#wrapper #content .pages .page .pageKeyBox h3 {
+	background-color: transparent;
+	font-size: 1.7em;
+	font-weight: bold;
+	padding: 0;
+	margin: 12% 0 5% 0;
+}
+
+#wrapper #content .pages .page .pageKeyBox p {
+	width: 85%;
+	margin: 0 auto;
+	line-height: 1.6em;
+}
+/* End Key Points*/
+
+/*
+
+	Footer
+
+*/
+#footer {
+	width: 90%;
+	height: 75px;
+}
+
+#footer h1 {
+	font-size: 1.3em;
+}
+
+#footer #copyright {
+	float: left;
+	width: 25%;
+	height: 100%
+}
+
+#footer #copyright h1 {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+#footer #copyright img {
+	position: relative;
+	top: 30%;
+	left: 5%;
+	width: 15%;
+	min-height: 30px;
+	min-width: 36px;
+}
+
+#footer #copyright span {
+	display: inline-block;
+	color: #f9f9f9;
+	position: relative;
+	top: 17%;
+	left: 8%;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+#footer #copyright span.date {
+	display: inline-block;
+	color: #9a9a9a;
+	position: relative;
+	top: 15%;
+	left: 10%;
+	font-size: .7em;
+}
+
+#footer #copyright #footerDesignOne {
+	position: relative;
+	top: 1px;
+	left: 99%;
+	border-color: #242e37 transparent transparent #242e37;
+	border-style: solid;
+	border-width: 29px 23px 47px 38px;
+	width: 0;
+	height: 0;
+	margin: -75.2px 0 0 0;
+}
+
+#footer #siteCredits {
+	float: left;
+	width: 65%;
+	height: 100%;
+	background: #292377;
+	padding-left: 10%;
+	font-weight: bold;
+}
+
+#footer #siteCredits h1 {
+	position: relative;
+	top: 44%;
+	right: -10%;
+	padding: 0;
+	width: 100%;
+	background: transparent;
+	font-size: 1em;
+}
+/*End Footer*/
+
+/*
+
+	Media Queries
+
+*/
+@media only screen and (min-width : 1068px) {
+	#wrapper #content .pages .page .pageContent .pageOtherArticlesContainer {
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width : 651px) and (max-width : 1068px) {
+	p {
+		font-size: 13px;
+	}
+
+	h2 {
+		font-size: 1.9em;
+	}
+
+	h3 {
+		font-size: 1em;
+	}
+	
+	/*Main Menu Responsive*/
+	#wrapper #mainMenu #menuWrap #menu {
+		font-size: .77em;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu a {
+		width: auto;
+		background-position: 3px center;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu a:hover {
+		background-position: 3px center;
+	}
+
+	#wrapper #mainMenu #mainSocialIcons #socialIcons li {
+		width: 32.33%;
+	}
+	/*Main Menu End*/
+
+	/*Page Title Responsive*/
+	#wrapper #content .pages .page .pageTitle .titleOne img {
+		width: 30%;
+		right: 9%;
+	}
+
+	#wrapper #content .pages .page .pageTitle .titleTwo h1 span {
+		font-size: .4em;
+	}
+
+	#wrapper #content .pages .page .pageTitle .titleTwo {
+		left: 10%;
+	}
+	/*Page Title End*/
+
+	/*Home Responsive*/
+	#wrapper #content .pages .page .pageHeader .pad3D {
+		top: 17.3%;
+	}
+	/*End Home Responsive*/
+
+	/*About Responsive*/
+	#wrapper #content .pages .page .pageAboutItem section {
+		height: 58%;
+	}
+
+	#wrapper #content .pages .page .pageAboutItem h3 {
+		font-size: 1em;
+	}
+
+	#wrapper #content .pages .page .pageAboutItem h4 {
+		font-size: .7em;
+	}
+
+	#wrapper #content .pages .page .pageAboutItem p {
+		line-height: 1.6em;
+	}
+	/*End About*/
+
+	/*Portfolio Responsive*/
+	#wrapper #content .pages .page .pageHeader .portfolioNav ul li {
+		width: 9%;
+	}
+
+	#wrapper #content .pages .page .pageHeader .portfolioNav ul li a {
+		font-size: 16px;
+		line-height: 2.3em;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio figure {
+		margin: 0 0.2% .2% 0;
+	}
+	/*Portfolio End*/
+
+	/*Articles Responsive*/
+	#wrapper #content .pages .page .pageHeader .articleFeaturedImage img {
+		height: 225px;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons {
+		width: 125%;
+	}
+	
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons img {
+		top: 20%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons a {
+		font-size: .53em;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleCalendar {
+		width: 34%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleComments {
+		width: 20.3%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore {
+		width: 37%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure {
+		width: 59%;
+	}
+	/*End Articles*/
+
+	/*Key Points Responsive*/
+	#wrapper #content .pages .page .pageKeyBox {
+		width: 27%;
+		height: 454px;
+	}
+
+	#wrapper #content .pages .page .pageKeyBox h3 {
+		font-size: 1.3em;
+		margin: 0 0 5% 0;
+	}
+
+	#wrapper #content .pages .page .pageKeyBox p {
+		width: 91%;
+		line-height: 1.5em;
+		font-size: 12px;
+	}
+	/*End Key Points*/
+
+	/*Footer Responsive*/
+	#footer #copyright h1 p {
+		font-size: 88%;
+	}
+
+	#footer #copyright h1 section {
+		font-size: .5em;
+	}
+
+	#wrapper #footer #siteCredits h1 {
+		font-size: .78em;
+	}
+	/*End Footer*/
+}
+
+/*
+	Tablet
+*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	#wrapper #content .pages .page .pageSliderContainer {
+		height: auto;
+	}
+	#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-previous, #wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-next {
+		/*top: 20%;*/
+		width: 30px;
+		height: 30px;
+		background-size: 100% 100%;
+	}
+	#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-previous:hover, #wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-next:hover {
+		/*top: 20%;*/
+		width: 30px;
+		height: 30px;
+		background-size: 100% 100%;
+	}
+	.slidesjs-pagination {
+		display: none;
+	}
+	#wrapper #content .pages .page .pageContent .buyButton {
+		bottom: 20px;
+		width: 100px;
+		height: 30px;
+		padding: 8px 0 0 15px;
+		line-height: 20px;
+		background-position: 10px;
+	}
+	#wrapper #content .pages .page .pageContent .buyButton:hover {
+		background-position: 10px;
+	}
+}
+
+/*
+	Mobile
+*/
+@media only screen and (min-width : 0px) and (max-width : 650px) {
+	/*Globals*/
+	h1 {
+		/*font-size: 32px;*/
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 19px;
+	}
+
+	p {
+		font-size: 12.5px;
+	}
+
+	#wrapper {
+		width: 100%;
+		margin-top: 120px;
+	}
+
+	#headerTitle h1 {
+		font-size: 3em;
+		padding: 120px 0px 0px 30px;		
+	}
+
+	#wrapper #content { 
+		width: 100%;
+		display: block;
+	} 
+
+	#wrapper #content .pages .page {
+		width: 98%;
+	}
+	/*End Globals*/
+
+	/* Menu Mobile Reponsive*/
+	#wrapper #mainMenu {
+		position: fixed;
+		width: 100%;
+		height: 70px;
+		z-index: 1000;
+	}
+	
+	#wrapper #mainMenu #menuWrap #mobileMenuIcon {
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+
+	#wrapper #mainMenu #menuWrap #mobileMenuIcon img {
+		margin: 25px auto;
+	}
+
+	#wrapper #mainMenu #fluidLogo {
+		left: 0;
+		width: 70% !important;
+		height: 70px !important;
+		text-align: center;
+		z-index: 2;
+	}
+
+	#wrapper #mainMenu #fluidLogo a img {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: auto;
+		height: auto;
+		max-width: 80%;
+		margin: 15px auto;
+	}
+
+	#wrapper #mainMenu #menuWrap {
+		position: absolute;
+		float: none;
+		width: 30%;
+		height: 70px;
+		top: 0px;
+		right: 0px;
+		font-size: 15px;
+		line-height: 1.3em;
+		box-shadow: 0px 0.5px 5px 0px;
+		z-index: 2;
+	}
+
+	#wrapper #mainMenu #menuWrap .scrollArrow img {
+		display: none;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu {
+		display: none;
+		position: fixed;
+		top: 70px;
+		left: 0px;
+		width: 100%;
+		margin: 0;
+		padding: 0%;
+		overflow: visible;
+		background: #11171c;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu li {
+		float: left;
+		width: 100%;
+		height: 50px;
+		padding: 0;
+		margin: 0 1% 0 0;
+		text-align: center;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu a {
+		left: 0;
+		height: auto;
+		font-size: .75em;
+		margin: 0 auto;
+		padding: 15px;
+		text-align: center;
+		background: none;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu a:hover {
+		width: 100%;
+		background: #242e37;
+		border-radius: 5px;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu a:hover ul {
+		display: block !important;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu li ul {
+		/*position: relative;*/
+		left: 0;
+		top: 0;
+		float: left;
+		width: 120px;
+		font-size: .8em;
+		border-radius: 3px;
+		background: #242e37;
+		z-index: 100;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu li ul.active {
+		display: block !important;
+		z-index: 10000000 !important;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu li ul:after {
+		border: none;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu li ul li {
+		padding: 0% 7% 4% 1%;
+	}
+
+	#wrapper #mainMenu #menuWrap #menu li ul li a {
+		padding: 0 16% 6% 0%;
+		height: 52%;
+	}
+
+	#wrapper #mainMenu #mainSocialIcons {
+		/*display: none;*/
+		position: fixed;
+		top: 70px;
+		width: 100%;
+		height: 50px;
+		z-index: 1;
+	}
+
+	#wrapper #mainMenu #mainSocialIcons #socialIcons {
+		width: 100%;
+		height: 50px;
+		margin: 0;
+	}
+
+	#wrapper #mainMenu #mainSocialIcons #socialIcons li {
+		width: 8.3%;
+		height: 96%;
+		margin: .15%;
+	}
+
+	#wrapper #mainMenu #mainSocialIcons #socialIcons a {
+		height: 60%;
+	}
+
+	#wrapper #mainMenu #mainSocialIcons #socialIcons a img {
+		position: relative;
+		width: 54.8%;
+		top: 24%;
+		left: 0%;
+	}
+	/*End Menu*/
+
+	/*Header Mobile Responsive*/
+	#wrapper #header {
+		width: 100%;
+	}
+	#wrapper #header .swipeSlideshow .slideshowInnerContainer #slides .slidesjs-previous, #wrapper #header .swipeSlideshow .slideshowInnerContainer #slides .slidesjs-previous:hover {
+		top: 40%;
+		left: 15px;
+		width: 20px;
+		height: 20px;
+		margin-top: 0px;
+		background-size: 100% 100%;
+	}
+	#wrapper #header .swipeSlideshow .slideshowInnerContainer #slides .slidesjs-next, #wrapper #header .swipeSlideshow .slideshowInnerContainer #slides .slidesjs-next:hover {
+		top: 40%;
+		right: 15px;
+		width: 20px;
+		height: 20px;
+		margin-top: 0px;
+		background-size: 100% 100%;
+	}
+	/*End Header*/
+
+	#wrapper #content .pages .page .pageContent {
+		height: auto;
+	}
+
+	#wrapper #content .pages .page .pageSliderContainer {
+		width: 80%;
+		height: auto;
+	}
+
+	#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-pagination {
+		display: none;
+	}
+
+	#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-previous {
+		left: 5px;
+	}
+
+	#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-next {
+		right: 5px;
+	}
+
+	#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-previous, #wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-next {
+		top: 40%;
+		width: 20px;
+		height: 20px;
+		background-size: 100% 100%;
+	}
+
+	#wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-previous:hover, #wrapper #content .pages .page .pageSliderContainer .pageSlider .slidesjs-next:hover {
+		/*top: 30%;*/
+		width: 20px;
+		height: 20px;
+		background-size: 100% 100%;
+	}
+
+	#wrapper #content .pages .page .pageContent .buyButton {
+		bottom: 15px;
+		left: 50%;
+		width: 40px;
+		height: 20px;
+		padding: 5px 5px 0 20px;
+		margin: 0 0 0 -30px;
+		font-size: 12px;
+		line-height: 12px;
+		background-position: 5px 4px;
+		background-size: 15px;
+	}
+
+	#wrapper #content .pages .page .pageContent .buyButton:hover {
+		background-position: 5px 4px;
+		background-size: 15px;
+	}
+
+	#wrapper #content .pages .page .pageContent .pageOtherArticlesContainer {
+		width: 95%;
+	}
+
+	#wrapper #content .pages .page .pageContent .pageOtherArticlesContainer .pageOtherArticlesPrevBtn {
+		width: 20px;
+		background: rgba(255,255,255,0.4) url(../images/articles/slider_left_arrow.png) no-repeat;
+		background-position: center;
+	}
+
+	#wrapper #content .pages .page .pageContent .pageOtherArticlesContainer .pageOtherArticlesPrevBtn a {
+		background: none;
+		text-indent: 1000000px;
+	}
+
+	#wrapper #content .pages .page .pageContent .pageOtherArticlesContainer .pageOtherArticlesNextBtn {
+		width: 20px;
+		background: rgba(255,255,255,0.4) url(../images/articles/slider_right_arrow.png) no-repeat;
+		background-position: center;
+	}
+
+	#wrapper #content .pages .page .pageContent .pageOtherArticlesContainer .pageOtherArticlesNextBtn a {
+		background: none;
+		text-indent: 1000000px;
+	}
+
+	/*Page Title Mobile Responsive*/
+	#wrapper #content .pages .page .pageTitle {
+		width: 100%;
+		height: 35px;
+	}
+
+	#wrapper #content .pages .page .pageTitle .titleDesign {
+		border-width: 2px 5px 32px 37px;
+	}
+
+	#wrapper #content .pages .page .pageTitle .titleDesignTwo {
+		border-width: 1px 5px 34px 39px;
+	}
+
+	#wrapper #content .pages .page .pageTitle .titleOne {
+		width: 29%;
+		height: 35px;
+	}
+
+	#wrapper #content .pages .page .pageTitle .titleOne h1 {
+		height: 35px;
+	}
+
+	#wrapper #content .pages .page .pageTitle .titleOne img {
+		top: 18%;
+		width: 18%;
+	}
+
+	#wrapper #content .pages .page .pageTitle .titleTwo {
+		width: 62%;
+		height: 35px;
+	}
+
+	#wrapper #content .pages .page .pageTitle .titleTwo h1 {
+		font-size: 2em;
+		height: 35px;
+	}
+
+	#wrapper #content .pages .page .pageTitle .titleTwo h1 span {
+		top: 5%;
+	}
+
+	#wrapper #content .pages .prevPage, #wrapper #content .pages .nextPage {
+		height: 0px;
+		padding: 17px;
+	}
+	#wrapper #content .pages .prevPage img, #wrapper #content .pages .nextPage img {
+		top: 5px;
+	}
+	/*Page Title End*/
+
+	/*Home Mobile Responsive*/
+	#wrapper #content .pages .page .pageHeader .pad3D {
+		position: absolute;
+		width: 34%;
+		top: 20.3%;
+		left: 0.6%;
+	}
+
+	#wrapper #content .pages .page .pageHeader .pageBlurb {
+		position: relative;
+		float: left;
+		margin: 7% 0 0 36%;
+		width: 63%;
+	}
+	/*End Home*/
+
+	/*About Mobile Responsive*/
+	#wrapper #content .pages .page .pageAboutItem {
+		width: 55%;
+		height: 350px;
+		margin-bottom: 7%;
+	}
+
+	#wrapper #content .pages .page .pageAboutItem .aboutTop .hoverGroup .aboutSocials {
+		padding-top: 18%;
+	}
+	/*End About*/
+
+	/*Portfolio Mobile Responsive*/
+	#wrapper #content .pages .page .pageHeader .portfolioNav ul li {
+		width: 18%;
+	}
+
+	#wrapper #content .pages .page .pagePortfolioContainer {
+		width: 95%;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio figure {
+		margin: 0 1px 1px 0;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio .listFileOne {
+		height: 375px;
+		width: 29%;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio .listFileTwo {
+		height: 150px;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio .listFileThree {
+		height: 200px;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio .listFileFour {
+		height: 222.5px;
+		margin-top: -49px;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio .listFileFive {
+		height: 174px;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio .listFileSix {
+		width: 54.2%;
+		height: 175px;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio .listFileSeven {
+		height: 175px;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio figure .portfolioHover {
+		top: -101%;
+		height: 101%;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio .portfolioHover p {
+		font-size: 10px;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio .portfolioHover a img {
+		width: 40px;
+		height: 40px;
+		margin: 0 0 0 14%;
+	}
+
+	#wrapper #content .pages .page .pagePortfolio .portfolioHover a span {
+		width: 100%;
+	}
+	/*End Portfolio*/
+
+	/*Articles Mobile Responsive*/
+	#wrapper #content .pages .page .pageHeader .pageArticleBlurb h2 {
+		margin-top: 5%;
+		font-size: 22px;
+	}
+
+	#wrapper #content .pages .page .pageHeader .pageArticleBlurb h3 {
+		margin: 5% 0 8% 0;
+	}
+	
+	#wrapper #content .pages .page .pageHeader .articleFeaturedImage {
+		width: 40%;
+		position: relative;
+		left: 2%;
+		top: 2%;
+	}
+
+	#wrapper #content .pages .page .pageHeader .pageArticleBlurb p {
+		width: 230%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons {
+		width: 255%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons a {
+		position: relative;
+		top: 24%;
+		font-size: .79em;
+		text-align: center;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons img {
+		display: none;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleCalendar {
+		width: 31%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleComments {
+		width: 16.3%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleComments a {
+		
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore {
+		width: 36%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox {
+		z-index: 1000;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox:target {
+		z-index: 1000;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure {
+		width: 60%;
+		height: auto !important;
+		overflow-y: scroll;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure header img {
+		display: inline-block;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure header h1 {
+		width: 90%;
+		margin: 4% 0 1% 5%;
+		font-size: 22px;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure header h2 {
+		width: 90%; 
+		margin: 2% 0 2% 5%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure header h3 {
+		width: 90%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure section p {
+		width: 90%;
+		padding: 0 0 5.4% 0;
+		font-size: 12px;
+		line-height: 1.5em;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure section blockquote {
+		width: 90%;
+		padding: 1% 0% 2% 3%;
+		margin: 0 0 3.4% 0;
+	}
+	
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure #articleLightPrev {
+		top: 5%;
+		left: 5%;
+	}
+
+	#wrapper #content .pages .page .pageArticleBlurb .articleButtons #articleReadMore .lightbox figure #articleLightNext {
+		top: 5%;
+		right: 5%;
+	}
+	/*End Articles*/
+
+	#wrapper #content .pages .page .pageAboutItem .aboutTop .hoverGroup .aboutSocials a {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background: #fff;
+		border-radius: 50px;
+	}
+
+	#wrapper #content .pages .page .pageAboutItem .aboutTop .hoverGroup .aboutSocials img {
+		width: 40%;
+		padding: 15px;
+		height: 25px;
+	}
+
+	/*Key Points Mobile Responsive*/
+	#wrapper #content .pages .page .pageKeyBox {
+		width: 64%;
+	}
+
+	#wrapper #content .pages .page .pageKeyBox p {
+		width: 90%;
+		line-height: 2em;
+	}
+	/*End Key Points*/
+
+	/*Footer*/
+	#wrapper #footer {
+		width: 100%;
+	}
+
+	#wrapper #footer #copyright {
+		width: 35%;
+	}
+
+	#wrapper #footer #copyright h1 {
+
+	}
+
+	#wrapper #footer #copyright h1 img {
+		min-width: 19%;
+	}
+	
+	#wrapper #footer #copyright h1 span {
+		font-size: 54%;
+	}
+
+	#wrapper #footer #copyright h1 span.date {
+		top: 17%;
+		left: 7%;
+		font-size: 8px;
+	}
+
+	#wrapper #footer #siteCredits {
+		width: 55%;
+	}
+
+	#wrapper #footer #siteCredits h1 {
+		font-size: 0.58em;
+		width: 91%;
+	}
+	/*End Footer*/
+}
+/*End Mobile*/
+/* Media Queries*/
+
+
+/*
+	Swipe Slideshow Styles
+*/
+
+#slides {
+	position: relative;
+}
+
+#slides .slidesjs-pagination {
+	position: absolute;
+	bottom: 20px;
+	left: 47%;
+	z-index: 11;
+}
+
+#slides .slidesjs-pagination li {
+	float: left;
+	padding: 0 15px;
+	list-style: none;
+}
+
+#slides .slidesjs-pagination li a {
+	
+}
+
+#slides ul {
+	display: none;
+}
+
+/*
+	
+	Firefox specific styles
+
+*/
+@-moz-document url-prefix() {
+	#wrapper #content .pages .page .pageTitle .titleDesignTwo {
+		right: -53px;
+	}
+	#wrapper #content .pages .page #homeBackground {
+		margin-top: -7%;
+	}
+	#wrapper #content .pages .page #aboutBackground{
+		margin: -7% 0 0 0;
+	}
+	#wrapper #content .pages .page #keyBackground {
+		 margin: -7% 0 0;
+	}
+}

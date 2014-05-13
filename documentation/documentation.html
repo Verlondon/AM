@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Fluid HTML Theme Documentation</title>
+
+	<!-- meta data -->
+    <meta charset="utf-8">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h3 class="altText">"Fluid HTML Theme" Documentation by "Architect Mindframe" v1.0</h3>
+		</header>
+		<h1 class="altText">"Fluid HTML Theme"</h1>
+		<section class="titleInfo">
+			<p class="titleFacts">
+				Created May 1st, 2014.<br>
+				By: <a href="http://www.architectmindframe.com">Architect Mindframe</a><br>
+				Email: admin@architectmindframe.com
+			</p>
+			<p class="titleThanks">Thank you for purchasing the Fluid HTML Theme. If you have any questions that are beyond the scope of this help file, please feel free to contact us <a href="mailto:admin@architectmindframe.com">here.</a> Thank You so much!</p>
+		</section>
+		<h3 class="altText" id="note">
+			If you like this theme, please let us know and rate it on the ThemeForest site. Thank you!
+		</h3>
+		<menu id ="tableOfContents">
+			<h2 id="toc" class="altText">Table of Contents</h2>
+			<ol type="A">
+				<li><a href="#Install">Installation</a></li>
+				<li><a href="#HTML">HTML</a></li>
+				<li><a href="#CSS">CSS</a></li>
+				<li><a href="#Javascript">Javascript</a></li>
+				<li><a href="#Images">Images</a></li>
+				<li><a href="#PSD">PSD File</a></li>
+				<li><a href="#404">404.html</a></li>
+			</ol>
+			<p></p>
+		</menu>
+		<section id="pageContent">
+			<article class="mainPoints">
+				<h2> <a id="Install">A) Installation</a>
+					<a href="#tableOfContents">
+						top
+					</a>
+				</h2>
+					<section class="articleContent">
+						<p> There is no installation needed for this Theme, as it's meant to be a model for experienced users to customize the theme and set it up for their website (there is a WordPress version of this theme currently in development).</p>
+						<p>The theme will work as is. If you upload the files and manually call the "index.html" the theme will be functional with content that demonstrates its capabilities.</p>
+					</section>
+			</article>
+			<article class="mainPoints">
+				<h2><a id="HTML">B) HTML</a>
+					<a href="#tableOfContents">
+						top
+					</a>
+				</h2>
+					<section class="articleContent">
+						<p>This theme is a dynamic layout featuring multiple pre-rendered pages for your convienence. The theme is broken up into pages and the theme navigates both horizontally and vertically. The file named "index.html" contains the markup.</p> 
+						<p>The general template structure is the same throughout the template. Here is the general structure:</p>
+						<img src="console.png" width="100%"/>
+						<p>You can easily add more pages to your site by duplicating and customizing the code of the different pages we have provided.The different sections are clearly marked with these comments:</p>
+							<ul>
+								<li>mainMenu</li>
+								<li>header</li>
+								<li>content</li>
+								<li>Home</li>
+								<li>About</li>
+								<li>Portfolio</li>
+								<li>Key Points</li>
+								<li>Articles</li>
+								<li>footer</li>
+								<li>Javascript</li>
+							</ul>
+						<p>To quickly add a new page to the theme, you can use the code below:</p>
+
+						<p>First, add a new "li" item to the "ul" with an id of "menu" below. Your new menu item will link to your page by adding a "#" followed by a lowercase word with no spaces within the "href" attribute of your anchor.</p>
+
+						<img src="code-clip.jpg" width="100%">
+
+						<p>The code has been verified with W3.org and you can view the results <a href="http://validator.w3.org/check?uri=http%3A%2F%2Farchitectmindframe.com%2Fprototypes%2Ffluid%2F">here</a></p>
+					</section>
+			</article>
+			<article class="mainPoints">
+				<h2><a id="CSS">C) CSS</a>
+					<a href="#tableOfContents">
+						top
+					</a>
+				</h2>
+					<section class="articleContent">
+						<p>This template is built with CSS2.1/CSS3. The main Stylesheet is a file called "style.css."" This file contains the majority of the front-end design code.</p>
+						<p>There is a boilerplate file called "main.css" which includes other foundational settings. You can view details about this boilerplate <a href="http://html5boilerplate.com/">here.</a></p>
+						<p>Lastly, there is another general correction file named "normalize.css." This file also contributes to the foundation of the theme and you can view more details about this file <a href="http://html5boilerplate.com/">here</a></p>
+						<p>The Stylesheet sections of the CSS are clearly marked by these comments within the file:</p>
+							<ul>
+								<li>Global Styles</li>
+								<li>Menu Styles</li>
+								<li>Header Styles</li>
+								<li>Body Structure and Page Headers</li>
+								<li>Home</li>
+								<li>About Us</li>
+								<li>Portfolio</li>
+								<li>Articles</li>
+								<li>Articles Light Box</li>
+								<li>Key Points</li>
+								<li>Footer</li>
+								<li>Media Queries</li>
+								<li>Swipe Slideshow Styles</li>
+							</ul>
+						<p>If you would like to edit this file, find the appropriate comment in the CSS file then scroll down until you find the style that needs to be edited.</p>
+					</section>
+			</article>
+			<article class="mainPoints">
+				<h2><a id="Javascript">D) Javascript</a>
+					<a href="#tableOfContents">
+						top
+					</a>
+				</h2>
+					<section class="articleContent">
+						<p>Listed below are the different key files of javascrpit within this theme along with their filename and a brief description:
+							<ul>
+								<li>Main - "fluid/js/main.js" - This file contains the core functionality for the theme.  See document comments for details.</li>
+								<li>jQuery - "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" - Using JQuery version 1.10.2.</li>
+								<li>Mousewheel - "fluid/js/vendor/jquery.mousewheel-3.0.6.pack.js" - This file contains the main code for the scroll wheels of the theme. </li>
+								<li>Fancybox - "fluid/js/vendor/jquery.fancybox.js?v=2.1.5" - This is the file containing the main code for the light-boxes of the theme.</li>
+								<li>Fancybox-Thumbs - "fluid/js/vendor/jquery.fancybox-thumbs.css?v=1.0.7" - Related to the main fancybox file, this contains the settings for light-box thumbnails.</li>
+								<li>Fancybox-Media - "fluid/js/vendor/jquery.fancybox-media.js?v=1.0.6" - </li>
+								<li>Plugins - "fluid/js/plugins.js" - This space leaves room for any user to add jquery plugins to the code.</li>
+								<li>Slides - "fluid/js/jquery.slides.min.js" - This file contains the main code for various sliders in the theme.</li>
+								<li>html5Shiv - "fluid/js/html5shiv.js" - This Shiv is a workaround that makes sure older browsers correctly recognize HTML5 code.</li>
+								<li>jCarousel Lite - "jcarousellite_1.0.1.min.js" - This plugin contributes to the carousels of the template and you can find more info about it <a href="http://www.gmarwaha.com/jquery/jcarousellite/">here.</a></li>
+							</ul>
+						</p>
+					</section>
+			</article>
+			<article class="mainPoints">
+				<h2><a id="Images">E) Images</a>
+					<a href="#tableOfContents">
+						top
+					</a>
+				</h2>
+					<section class="articleContent">
+						<p>All of the images and icons featured in the theme are located in the folder named "images."</p>
+						<p>If you navigate into the subfolder named "icons" you will find more subfolders with icons and images from each section of the theme.</p>
+					</section>
+			</article>
+			<article class="mainPoints">
+				<h2><a id="PSD"> F) PSD File</a>
+					<a href="#tableOfContents">
+						top
+					</a>
+				</h2>
+					<section class="articleContent">
+						<p>Provided with this theme is a PSD file containing dozens of unique elements. The file is layered, organized well, and ready for your use.</p>
+						<p>The file is located in the folder titled "psd" and the file name is "fluid-psd.psd"</p>
+					</section>
+			</article>
+			<article class="mainPoints">
+				<h2><a id="404"> G) 404.html</a>
+					<a href="#tableOfContents">
+						top
+					</a>
+				</h2>
+					<section class="articleContent">
+						<p>This file contains the code for the theme 404 page.</p>
+						<p>You can edit the file at this location: "fluid/404.html"</p>
+					</section>
+			</article>
+		</section>
+		<footer>
+			<p>
+				We would like to extend our appreciation and thanks for purchasing this theme. We hope you enjoy it and we hope it is able to provide you with everything you need. If you have any questions, comments, or concerns feel free to contact us and we will happily answer your questions. Thank you.
+			</p>
+			<p>
+				<a href="#toc">Return to Table of Contents</a>
+			</p>
+		</footer>
+	</div>
+</body>
